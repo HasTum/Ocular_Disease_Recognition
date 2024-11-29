@@ -1,4 +1,5 @@
 **Ocular Disease Detection with Deep Learning**
+
 This project uses deep learning to automate the diagnosis of multiple ocular diseases from fundus images. Leveraging Convolutional Neural Networks (CNNs) and transfer learning, it aims to provide an accurate diagnostic tool to assist healthcare professionals in early detection and management of eye diseases, reducing the risk of preventable blindness.
 
 Table of Contents
