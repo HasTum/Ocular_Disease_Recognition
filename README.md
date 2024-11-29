@@ -74,7 +74,18 @@ Precision: Measures false positives to avoid unnecessary treatments.
 Recall (Sensitivity): Ensures diseases are not overlooked.
 F1 Score: Balances precision and recall for comprehensive evaluation.
 
-![image](https://github.com/user-attachments/assets/77cd8b00-effe-4117-a7bd-96e3c973225a)
+![image](https://github.com/user-attachments/assets/77cd8b00-effe-4117-a7bd-96e3c973225a)    ![image](https://github.com/user-attachments/assets/6cdcb791-4de2-4f91-9d1b-81aa7027c9c5)
+
+The model demonstrated strong training performance, with a consistent decrease in loss and steady improvement in accuracy over the epochs. Validation accuracy showed an encouraging upward trend in the early stages, reflecting the model's ability to generalize well. These results highlight the effectiveness of the model architecture and training strategy, with opportunities to further optimize for validation performance.
+
+![image](https://github.com/user-attachments/assets/ea3d946a-ca39-431a-9c17-3636f57aced2)
+
+The confusion matrix illustrates the model's classification performance across eight ocular disease categories, highlighting the percentage of correct predictions (diagonal) and areas of misclassification (off-diagonal) to identify strengths and improvement areas.
+
+
+![image](https://github.com/user-attachments/assets/b2e88df2-258f-4bd4-95ec-42790d798cdf)
+
+The ROC curve shows the model's ability to distinguish between classes, with the Area Under the Curve (AUC) indicating high classification performance across most classes, demonstrating the model's robustness in predicting ocular diseases.
 
 
 **Explainability and Model Interpretability**
