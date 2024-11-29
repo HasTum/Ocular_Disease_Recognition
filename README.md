@@ -16,6 +16,7 @@ Project Overview
 According to the World Health Organization (WHO), 2.2 billion people are visually impaired, with at least 1 billion cases being preventable. Early detection is critical for reducing the severity of eye conditions. This project employs transfer learning with VGG-19 to classify ocular diseases based on fundus images, ensuring clinical usefulness and reliability.
 
 **Dataset Overview**
+
 The project utilizes the ODIR-5K dataset, containing:
 
 7,000 fundus images
@@ -30,6 +31,7 @@ Pathological Myopia (M)
 Other Diseases/Abnormalities (O
 
 **Addressing Class Imbalance**
+
 To ensure robust performance across all classes, this project handles class imbalance using:
 
 **Data Augmentation:** Generates synthetic samples for underrepresented classes.
@@ -37,6 +39,7 @@ To ensure robust performance across all classes, this project handles class imba
 **Sampling Strategies:** Employs oversampling techniques for minority classes.
 
 **Model Architecture**
+
 The classification system uses VGG-19 with customizations:
 
 Fully Connected Layers: Added dense layers specific to ocular disease patterns.
@@ -44,6 +47,7 @@ Batch Normalization: Stabilizes training and accelerates convergence.
 Dropout Regularization: Prevents overfitting by randomly deactivating neurons.
 
 **Data Preparation and Preprocessing**
+
 Steps Applied:
 Data Loading: Organizing images with associated labels.
 Data Splitting:
@@ -52,21 +56,25 @@ Testing Set: 20% of the data.
 One-Hot Encoding: Labels represented as 8-element vectors for multi-class classification.
 
 **Model Training and Evaluation**
+
 Optimizations:
 Adam Optimizer: Adapts the learning rate dynamically for efficient training.
 Categorical Cross-Entropy Loss: Measures prediction accuracy against one-hot encoded labels.
 Mixed Precision Training: Speeds up computation by using lower-precision values on compatible GPUs.
 
 **Regularization Techniques:**
+
 Dropout: Prevents co-adaptations in neurons during training.
 L2 Regularization: Penalizes large weights, encouraging simpler configurations.
 
 **Evaluation Metrics:**
+
 Accuracy: Overall correctness of predictions.
 Precision: Measures false positives to avoid unnecessary treatments.
 Recall (Sensitivity): Ensures diseases are not overlooked.
 F1 Score: Balances precision and recall for comprehensive evaluation.
 
+![image](https://github.com/user-attachments/assets/77cd8b00-effe-4117-a7bd-96e3c973225a)
 
 
 **Explainability and Model Interpretability**
